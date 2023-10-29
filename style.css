@@ -1,0 +1,112 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(d3fc8c890702b78058a5772310d3ddda.jpg);
+}
+#admin{
+    position: absolute;
+    text-align: center;
+    top: 210px;
+    left: 150px;
+    background-color:#8F8AC0 ;
+    border-radius: 20px;
+    color: #FFFFFF;
+   width: 400px;
+    
+  
+}
+#prof{
+    position: absolute;
+    text-align: center;
+    top: 300px;
+    left: 150px;
+    background-color:#8F8AC0 ;
+    border-radius: 20px;
+    color: #FFFFFF;
+    width: 400px;
+   
+}
+#parents{
+    position: absolute;
+    text-align: center;
+    top: 390px;
+    left: 150px;
+    background-color:#8F8AC0 ;
+    border-radius: 20px;
+    color: #FFFFFF;
+    width: 400px;
+
+}
+#eleve{
+    position: absolute;
+    text-align: center;
+    top: 480px;
+    left: 150px;
+    background-color:#8F8AC0 ;
+    border-radius: 20px;
+    color: #FFFFFF;
+    width: 400px;
+}
+#a{
+    width:700px;
+    height: 600px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 80px;
+    left: 400px;
+}
+#img{
+    width: 200px;
+    position: absolute;
+    top: 5px;
+    left: 240px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #a {
+        width: 94%;
+        height: 94%;
+        left: 10px; 
+        top: 20px;
+    }
+
+    #img {
+        width: 180px; 
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+
+    #admin, #prof, #parents, #eleve {
+        width: 90%;
+        left: 5%; 
+    }
+   
+@media screen and (max-width: 768px) {
+    #admin, #prof, #parents, #eleve {
+        transition: all 0.3s ease;
+    }
+
+    #admin:active, #prof:active, #parents:active, #eleve:active,
+    #admin:focus, #prof:focus, #parents:focus, #eleve:focus {
+        transform: scale(1.1); 
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    }
+}
+
+}
+
+
+#admin, #prof, #parents, #eleve {
+    
+    transition: all 0.3s ease; 
+}
+
+#admin:hover, #prof:hover, #parents:hover, #eleve:hover {
+    transform: scale(1.1); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
